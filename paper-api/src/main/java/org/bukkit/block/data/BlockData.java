@@ -1,7 +1,6 @@
 package org.bukkit.block.data;
 
 import org.bukkit.Color;
-import org.bukkit.Instrument;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Server;
@@ -323,12 +322,4 @@ public interface BlockData extends Cloneable {
      * @return true if block is replaceable
      */
     boolean isReplaceable();
-
-    /**
-     * Gets the {@link Instrument} associated with this block.
-     * This determines the instrument sound that would be played if a Note Block were placed directly above or below this block.
-     *
-     * @return the associated instrument
-     */
-    Instrument getInstrument();
 }
